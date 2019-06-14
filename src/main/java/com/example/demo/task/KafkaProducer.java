@@ -19,7 +19,7 @@ public class KafkaProducer {
      */
     @Scheduled(cron = "0/5 * * * * ? ")
     public void send () {
-        //kafkaTemplate.send("test", "13213213");
+        kafkaTemplate.send("test", "13213213");
     }
 
     /**
